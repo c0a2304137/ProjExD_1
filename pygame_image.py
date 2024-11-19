@@ -28,7 +28,8 @@ def main():
         elif key_lst[pg.K_DOWN]:
             rit = (-1, +1)
          #   kk_rct.move_ip(0, +1)
-        #if key_lst[pg.K_LEFT]:  
+        elif key_lst[pg.K_LEFT]:
+            rit = (-2, 0)  
         #kk_rct.move_ip(-1, 0)
         elif key_lst[pg.K_RIGHT]:
             rit = (1, 0)  
