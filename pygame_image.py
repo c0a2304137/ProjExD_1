@@ -16,10 +16,12 @@ def main():
     kk_rct = kk_img.get_rect()
     kk_rct = center = 300, 200
     tmr = 0
+
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-
+        key_lst = pg.key.get_pressed
+        
         x = -(tmr % 3200)
         screen.blit(bg_img, [x, 0])  #screan Surfaceに背景画像Surfaceに張り付ける
         screen.blit(bg_img2, [x+1600, 0])
